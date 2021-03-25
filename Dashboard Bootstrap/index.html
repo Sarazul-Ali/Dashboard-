@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel=" stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        @media only screen and (max-width: 600px) {
+            #mdtop {
+                margin-bottom: 3px;
+            }
+
+            #mttop {
+                margin-top: 3px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-warning display=1"> <i class="fab fa-slack"></i></i> Nation
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#na-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="na-navbar">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a class="nav-link active" href="index.html"><i class="fa fa-chart-bar "></i>
+                            Dashboard</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link active" href="task.html"><i class="fa fa-list"></i> Task</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link active" href="categories.html"><i class="fa fa-sitemap "></i>
+                            Categories</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link active" href="employee.html"><i class="fa fa-users "></i>
+                            Employees</a>
+                    </li>
+
+
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item dropdown">
+                        <a class="nav-link active" href="#" data-toggle="dropdown"><i class="fa fa-sign-in-alt"></i>
+                            Sarazul</a>
+                        <div class="dropdown-menu p-2">
+                            <a class="dropdown-item" href="profile.html"><i class="fa fa-user-circle"></i> Profile</a>
+                            <a class="dropdown-item" href="setting.html"><i class="fa fa-cogs"></i> Setting</a>
+
+
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link active" href="login.html"><i class="fa fa-sign-out-alt "></i>
+                            LogOut</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="bg-warning p-2">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-warning"><i class="fa fa-chart-bar"></i> Dashboard</h1>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Button Section -->
+    <section class="p-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 " id="mdtop">
+                    <button class="btn btn-primary btn-block " data-toggle="modal" data-target=#task-modal><i
+                            class="fa fa-plus-circle"></i> ADD
+                        TASK</button>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-success btn-block " data-toggle="modal" data-target=#category-modal><i
+                            class="fa fa-plus-circle"></i> ADD CATEGORY</button>
+                </div>
+                <div class="col-md-4" id="mttop">
+                    <button class="btn btn-danger btn-block" data-toggle="modal" data-target=#employee-modal><i
+                            class="fa fa-plus-circle"></i> ADD EMPLOYEE</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- grid part -->
+    <section class="p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card animated flipInY">
+                        <div class="card-header bg-dark text-warning">
+                            <h2>Current Tasks</h2>
+                        </div>
+                        <div class="card-body bg-light">
+                            <div class="table-responsive-sm">
+                                <table class="table table-hover table-striped text-center">
+                                    <thead class="bg-dark text-white">
+                                        <tr>
+                                            <th scope="col">SNO</th>
+                                            <th scope="col">NAME</th>
+                                            <th scope="col">EMAIL</th>
+                                            <th scope="col">TASK</th>
+                                            <th scope="col">LEVEL</th>
+                                            <th scope="col">CATEGORY</th>
+                                            <th scope="col">DETAILS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Sarazul</td>
+                                            <td>sarazulali444@gmail.com</td>
+                                            <td>Web Developer</td>
+                                            <td>Beginner</td>
+                                            <td>Intern</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>Sarazul</td>
+                                            <td>sarazulali444@gmail.com</td>
+                                            <td>Web Developer</td>
+                                            <td>Beginner</td>
+                                            <td>Intern</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>Sarazul</td>
+                                            <td>sarazulali444@gmail.com</td>
+                                            <td>Web Developer</td>
+                                            <td>Beginner</td>
+                                            <td>Intern</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td>Sarazul</td>
+                                            <td>sarazulali444@gmail.com</td>
+                                            <td>Web Developer</td>
+                                            <td>Beginner</td>
+                                            <td>Intern</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>Sarazul</td>
+                                            <td>sarazulali444@gmail.com</td>
+                                            <td>Web Developer</td>
+                                            <td>Beginner</td>
+                                            <td>Intern</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>06</td>
+                                            <td>Sarazul</td>
+                                            <td>sarazulali444@gmail.com</td>
+                                            <td>Web Developer</td>
+                                            <td>Beginner</td>
+                                            <td>Intern</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>07</td>
+                                            <td>Sarazul</td>
+                                            <td>sarazulali444@gmail.com</td>
+                                            <td>Web Developer</td>
+                                            <td>Beginner</td>
+                                            <td>Intern</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>08</td>
+                                            <td>Sarazul</td>
+                                            <td>sarazulali444@gmail.com</td>
+                                            <td>Web Developer</td>
+                                            <td>Beginner</td>
+                                            <td>Intern</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sidebar -->
+
+                <div class="col-md-3 animated flipInX ">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <i class="fa fa-list fa-4x"></i>
+                                </div>
+                                <div class="col">
+                                    <h3 class="display-3">08</h3>
+                                    <h6>Tasks</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center text-warning">
+                            <a href="task.html" class="text-warning"><i class="fa fa-arrow-alt-circle-right"></i> View
+                                Details</a>
+                        </div>
+
+                    </div>
+                    <div class="card mt-4 ">
+                        <div class="card-header bg-warning text-white">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <i class="fa fa-sitemap fa-4x"></i>
+                                </div>
+                                <div class="col">
+                                    <h3 class="display-3">04</h3>
+                                    <h6>Categories</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center text-warning">
+                            <a href="categories.html" class="text-danger"><i class="fa fa-arrow-alt-circle-right"></i>
+                                View
+                                Details</a>
+                        </div>
+
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header bg-danger text-white">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <i class="fa fa-users fa-4x"></i>
+                                </div>
+                                <div class="col">
+                                    <h3 class="display-3">11</h3>
+                                    <h6>Employees</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center text-warning">
+                            <a href="employee.html" class="text-primary"><i class="fa fa-arrow-alt-circle-right"></i>
+                                View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer part -->
+
+    <footer class="bg-dark text-warning text-center p-2 mt-4">
+        <div class="container">
+            <div>
+                <h4>Copyright <i class="fa fa-copyright" aria-hidden="true"> </i> 2021, Nation.com</h4>
+                <p>All Rights Reserved <br>
+                    Developed & Maintained by<i class="fa fa-user-circle"></i><a
+                        href="https://www.linkedin.com/in/sarazul-ali65333/" class="text-danger"> Sarazul Ali</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- task-modal -->
+
+    <div class="modal" id="task-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated jackInTheBox">
+                <div class="modal-header bg-primary text-white">
+                    <h3>Add Task</h3>
+                    <button class="close text-white" data-dismiss="modal">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form action="">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" class="form-control" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <label>Category</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select a Category</option>
+                                <option value="">Developer</option>
+                                <option value="">Data-Analyst</option>
+                                <option value="">Data-Scientist</option>
+                                <option value="">App Developer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Image Upload</label>
+                            <input type="file" class="form-control-file">
+                            <small>Max Size: 3MB</small>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="">Description</label>
+                            <textarea name="editor1" id="" rows="5" class="form-control"
+                                placeholder="Description"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" class="btn btn-primary" value="ADD TASK">
+                            <a href="#" data-dismiss="modal" class="btn btn-primary">CLOSE</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- category modal -->
+
+    <div class="modal" id="category-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated flipInX">
+                <div class="modal-header bg-success text-white">
+                    <h3>Add Category</h3>
+                    <button class="close text-white" data-dismiss="modal">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form action="">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="date" class="form-control">
+                        </div>
+                        <div>
+                            <a href="#" data-dismiss="modal" class="btn btn-success">CLOSE</a>
+                            <input type="submit" class="btn btn-success" value="Add CATEGORY">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- employee modal -->
+    <div class="modal" id="employee-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated flipInY">
+                <div class="modal-header bg-danger text-white">
+                    <h3>Add Employee</h3>
+                    <button class="close text-white" data-dismiss="modal">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form action="">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Employee Name">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" placeholder="Employee Email">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="password" class="form-control" placeholder="Default Password">
+                        </div>
+                        <div>
+                            <a href="#" data-dismiss="modal" class="btn btn-danger">CLOSE</a>
+                            <input type="submit" class="btn btn-danger" value="Add EMPLOYEE">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/mdb.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+</body>
+
+</html>

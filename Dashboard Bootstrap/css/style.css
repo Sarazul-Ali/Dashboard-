@@ -1,0 +1,36 @@
+
+    .dropdown-item:hover{
+        background: linear-gradient(45deg, rgb(37, 37, 37),darkslategray);
+        color: white !important;
+        box-shadow:0 0 10px black ;
+    }
+   .bg-primary, .btn-primary{
+        background:linear-gradient(45deg,rgb(37, 37, 37),rgb(4, 58, 58)) ;
+    }
+    .bg-warning, .btn-warning{
+        background:linear-gradient(45deg, rgb(37, 37, 37),rgb(102, 69, 20)) ;
+    }
+    .bg-success, .btn-success{
+        background:linear-gradient(45deg, rgb(37, 37, 37),rgb(39, 70, 4)) ;
+    }
+    .bg-dark, {
+        background: linear-gradient(45deg, rgb(37, 37, 37), teal);
+    }
+    .bg-danger, .btn-danger{
+        background: linear-gradient(45deg, rgb(37, 37, 37), darkred );
+    }
+
+    .bg-table{
+        background:rgb(169, 186, 186)!important;
+    }
+    .bg-2table{
+        background: rgb(187, 206, 165)!important;
+    }
+    .bg-3table{
+        background: rgb(226, 197, 197)!important;
+    }
+
+    .p-image{
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px black;
+    }
